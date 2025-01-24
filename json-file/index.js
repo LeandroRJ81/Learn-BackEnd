@@ -20,5 +20,5 @@ app.get('/cars', (req, res) => {
 const PORT = 3000
 
 app.listen(PORT, () => {
-    console.log('Servidor iniciado!\nRodando em http://localhost:3000')
+    console.log(`Servidor iniciado!\nRodando em http://localhost:${PORT}`)
 })
