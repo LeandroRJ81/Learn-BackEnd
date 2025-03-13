@@ -12,7 +12,7 @@ app.get('/tasks', (req, res) => {
 app.post('/tasks', (req, res) => {
     const { task } = req.body
 
-    const newTask = { id: uuidv4(), task }
+    const newTask = { id: uuidv4(), task } // Para gerar de ID númerico simples, usar 'idCounter++'
     tasks.push(newTask)
 
     return res.json(newTask)
